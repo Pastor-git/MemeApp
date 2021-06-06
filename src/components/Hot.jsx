@@ -1,5 +1,5 @@
-import React from 'react';
+import React from "react";
 
 export const Hot = () => {
-return <div>Hot</div>
-}
+  return <div>Hot</div>;
+};

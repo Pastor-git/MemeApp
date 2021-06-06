@@ -1,5 +1,5 @@
-import React from 'react';
+import React from "react";
 
 export const MainPage = () => {
-return <div>Main List!</div>
-}
+  return <div>Main List!</div>;
+};
