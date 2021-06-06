@@ -10,22 +10,22 @@ function App() {
     <div className="App">
       <Router>
         <ul>
-        <li><NavLink to="/Mainlist">MainList</NavLink></li>
-        <li><NavLink to="/hot">Hot</NavLink></li>
-        <li><NavLink to="/cold">Cold</NavLink></li>
+          <li><NavLink to="/Mainlist">MainList</NavLink></li>
+          <li><NavLink to="/hot">Hot</NavLink></li>
+          <li><NavLink to="/cold">Cold</NavLink></li>
         </ul>
         <Switch>
-        <Route path="/Mainlist">
-          <MainPage/>
-        </Route>
-        <Route path="/hot">
-          <Hot />
-        </Route>
-        <Route path="/cold">
-          <Cold />
-        </Route>
+          <Route path="/Mainlist">
+            <MainPage />
+          </Route>
+          <Route path="/hot">
+            <Hot />
+          </Route>
+          <Route path="/cold">
+            <Cold />
+          </Route>
         </Switch>
-    </Router>
+      </Router>
     </div>
   );
 }
