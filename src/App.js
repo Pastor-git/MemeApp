@@ -10,12 +10,12 @@ function App() {
     <div className="App">
       <Router>
         <ul>
-          <li><NavLink to="/Mainlist">MainList</NavLink></li>
+          <li><NavLink to="/mainlist">MainList</NavLink></li>
           <li><NavLink to="/hot">Hot</NavLink></li>
           <li><NavLink to="/cold">Cold</NavLink></li>
         </ul>
         <Switch>
-          <Route path="/Mainlist">
+          <Route path="/mainlist">
             <MainPage />
           </Route>
           <Route path="/hot">

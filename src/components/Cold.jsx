@@ -1,5 +1,5 @@
 import React from "react";
 
-export const Cold = () => {
+export function Cold() {
   return <div>Cold</div>;
-};
+}
