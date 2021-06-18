@@ -1,5 +1,6 @@
 import React from "react";
 
-export function Cold() {
-  return <div>Cold</div>;
+export function Cold(props) {
+  console.log("render");
+  return <img src={props.mem1} />;
 }

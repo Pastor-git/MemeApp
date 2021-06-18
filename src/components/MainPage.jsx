@@ -1,5 +1,8 @@
 import React from "react";
 
-export const MainPage = () => {
-  return <div>Main List!</div>;
+
+
+export const MainPage = (props) => {
+
+  return <div>Page</div>;
 };

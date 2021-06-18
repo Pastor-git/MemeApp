@@ -1,5 +1,6 @@
 import React from "react";
 
-export const Hot = () => {
-  return <div>Hot</div>;
+export const Hot = (props) => {
+  console.log(props);
+  return <div>HOT</div>;
 };
