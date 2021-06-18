@@ -14,7 +14,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      memList: [{name: 'mem1', upVote: 0, downVote: 0, img: "src/img/mem1"}],
+      memList: [{name: 'mem1', upVote: 0, downVote: 0, img: mem1}],
     }
    
   }
@@ -37,7 +37,7 @@ class App extends React.Component {
             <Hot memList={this.state.memList}/>
           </Route>
           <Route path="/cold" >
-            <Cold mem1={mem1}/>
+            <Cold mem1={this.state.memList[0]}/>
           </Route>
         </Switch>
       </Router>
