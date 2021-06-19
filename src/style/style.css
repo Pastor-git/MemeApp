@@ -1,15 +1,20 @@
 body {
-    background-color: dimgray;
-  }
+  background-color: dimgray;
+}
 
 text {
   color: azure;
 }
-  
+
 .App {
   border: 3px solid;
   border-color: black;
   border-radius: 3px;
   max-height: auto;
-  max-width: 600px;
-  }
+  max-width: auto;
+}
+
+div {
+  border-color: yellowgreen;
+  border-radius: 3px;
+}

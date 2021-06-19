@@ -27,19 +27,25 @@ class App extends React.Component {
   }
 
   
-upVote=()=>  {
-  let vote1 = this.state.memList[0].upVote + 1;
-  let vote2 = this.state.memList[0].downVote;
+upVote=(name)=>  {
+  let clickedMem = this.state.memList.find((mem)=> {return mem.name===name});
+  clickedMem.upVote = clickedMem.upVote + 1;
   return this.setState({
-    memList: [{name: 'mem1', upVote: vote1, downVote: vote2, img: mem1}],
+    memList: this.state.memList.map((mem)=>{
+      if (mem.name===clickedMem.name) return clickedMem
+      else return mem
+    })
   })
 }
 
-downVote=()=> {
-  let vote1 = this.state.memList[0].downVote + 1;
-  let vote2 = this.state.memList[0].upVote;
+downVote=(name)=> {
+  let clickedMem = this.state.memList.find((mem)=> {return mem.name===name});
+  clickedMem.downVote = clickedMem.downVote + 1;
   return this.setState({
-    memList: [{name: 'mem1', upVote: vote2, downVote: vote1, img: mem1}],
+    memList: this.state.memList.map((mem)=>{
+      if (mem.name===clickedMem.name) return clickedMem
+      else return mem
+    })
   })
 }
 
@@ -57,13 +63,13 @@ downVote=()=> {
         </ul>
         <Switch>
           <Route path="/mainlist">
-            <MainPage memList={this.state.memList} mem1={this.state.memList[0]} upVote={this.upVote} downVote={this.downVote}/>
+            <MainPage memList={this.state.memList} upVote={this.upVote} downVote={this.downVote}/>
           </Route>
           <Route path="/hot">
-            <Hot memList={this.state.memList}/>
+            <Hot memList={this.state.memList} upVote={this.upVote} downVote={this.downVote}/>
           </Route>
           <Route path="/cold" >
-            <Cold />
+            <Cold memList={this.state.memList} upVote={this.upVote} downVote={this.downVote}/>
           </Route>
         </Switch>
       </Router>

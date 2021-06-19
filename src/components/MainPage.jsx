@@ -1,21 +1,24 @@
 import React from "react";
 
-
-
 export const MainPage = (props) => {
-
-  return(
- 
-    <div>  
-    <img src={props.mem1.img} />
-    <h1>{props.mem1.name}</h1>
-    <h2>{props.mem1.upVote} Like {props.mem1.downVote} Dislike</h2>
-    <div><button onClick={props.upVote}>Like</button>
-    <button onClick={props.downVote}>Dislike</button>
+  return (
+    <div>
+      {props.memList
+        .filter((mem) => {
+          return mem.downVote === 0;
+        })
+        .map((mem) => {
+          return (
+            <div>
+              <img src={mem.img} />,<h1>{mem.name}</h1>,
+              <h2>
+                {mem.upVote} Like {mem.downVote} Dislike
+              </h2>
+              ,<button onClick={() => props.upVote(mem.name)}>Like</button>
+              <button onClick={() => props.downVote(mem.name)}>Dislike</button>
+            </div>
+          );
+        })}
     </div>
-    </div>
-
-  ) 
-
-
+  );
 };
