@@ -5,7 +5,7 @@ export const Hot = (props) => {
     <div>
       {props.memList
         .filter((mem) => {
-          return mem.downVote === 0;
+          return mem.upVote > mem.downVote;
         })
         .map((mem) => {
           return (

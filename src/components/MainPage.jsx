@@ -4,9 +4,6 @@ export const MainPage = (props) => {
   return (
     <div>
       {props.memList
-        .filter((mem) => {
-          return mem.downVote === 0;
-        })
         .map((mem) => {
           return (
             <div>
