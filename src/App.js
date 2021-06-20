@@ -56,11 +56,11 @@ downVote=(name)=> {
     
     <div className="App">
       <Router>
-        <ul>
+        <div class="navbar">
           <li><NavLink to="/mainlist">MainList</NavLink></li>
           <li><NavLink to="/hot">Hot</NavLink></li>
           <li><NavLink to="/cold">{`Cold`}</NavLink></li>
-        </ul>
+        </div>
         <Switch>
           <Route path="/mainlist">
             <MainPage memList={this.state.memList} upVote={this.upVote} downVote={this.downVote}/>

@@ -6,8 +6,8 @@ export const MainPage = (props) => {
       {props.memList
         .map((mem) => {
           return (
-            <div>
-              <img src={mem.img} />,<h1>{mem.name}</h1>,
+            <div  class="mem">
+              <h1>{mem.name}</h1>,<img src={mem.img} />,
               <h2>
                 {mem.upVote} Like {mem.downVote} Dislike
               </h2>
