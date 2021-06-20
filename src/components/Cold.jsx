@@ -1,5 +1,5 @@
 import React from "react";
-import Mem from './Mem';
+import Mem from "./Mem";
 
 export const Cold = (props) => {
   return (
@@ -10,9 +10,14 @@ export const Cold = (props) => {
         })
         .map((mem) => {
           return (
-            <Mem mem={mem} memList={props.memList} upVote={props.upVote} downVote={props.downVote}/>
+            <Mem
+              mem={mem}
+              memList={props.memList}
+              upVote={props.upVote}
+              downVote={props.downVote}
+            />
           );
         })}
     </div>
   );
-}
+};
