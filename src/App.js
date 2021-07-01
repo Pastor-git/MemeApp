@@ -1,4 +1,4 @@
-import style from './style/style.css';
+import style from './style.css';
 import { Switch, Route, BrowserRouter as Router, NavLink } from "react-router-dom";
 import { MainPage } from './components/MainPage';
 import { Hot } from './components/Hot';
@@ -58,9 +58,9 @@ class App extends React.Component {
         <div id="header"><text id="welcome_text">It's Rainy Meme!</text></div>
         <Router>
           <div id="navbar" >
-            <NavLink to="/mainlist"><button class="navbutton">MainList</button></NavLink><br/>
-            <NavLink to="/hot"><button class="navbutton">Hot</button></NavLink><br/>
-            <NavLink to="/cold"><button class="navbutton">{`Cold`}</button></NavLink>
+            <NavLink to="/mainlist"><button class="navbutton" id="main">MainList</button></NavLink><br/>
+            <NavLink to="/hot"><button class="navbutton" id="hot">Hot</button></NavLink><br/>
+            <NavLink to="/cold"><button class="navbutton" id="cold">{`Cold`}</button></NavLink>
           </div>
           <div id="content" >
           <Switch>
