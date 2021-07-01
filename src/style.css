@@ -91,3 +91,13 @@ text {
   color: aquamarine;
   background-color: #333;
 }
+
+.vote:hover {
+  color: black;
+  background-color: rgba(245, 245, 245, 0.473);
+  cursor: pointer;
+}
+
+.vote:active {
+  color: blue;
+}
