@@ -7,8 +7,8 @@ export const Mem = (props) => {
       <h2>
         {props.mem.upVote} Like {props.mem.downVote} Dislike
       </h2>
-      ,<button onClick={() => props.upVote(props.mem.name)}>Like</button>
-      <button onClick={() => props.downVote(props.mem.name)}>Dislike</button>
+      ,<button class="vote" onClick={() => props.upVote(props.mem.name)}>Like</button>
+      <button class="vote" onClick={() => props.downVote(props.mem.name)}>Dislike</button>
     </div>
   );
 };
