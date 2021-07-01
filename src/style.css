@@ -101,3 +101,11 @@ text {
 .vote:active {
   color: blue;
 }
+
+#like {
+  color: aliceblue;
+}
+
+#dislike {
+  color: aliceblue;
+}
