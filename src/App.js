@@ -17,10 +17,10 @@ class App extends React.Component {
     super(props);
     this.state = {
       memList: [
-        { name: 'mem1', upVote: 0, downVote: 0, img: mem1 },
-        { name: 'mem2', upVote: 0, downVote: 0, img: mem2 },
-        { name: 'mem3', upVote: 0, downVote: 0, img: mem3 },
-        { name: 'mem4', upVote: 0, downVote: 0, img: mem4 }
+        { name: 'Mem1', upVote: 0, downVote: 0, img: mem1 },
+        { name: 'Mem2', upVote: 0, downVote: 0, img: mem2 },
+        { name: 'Mem3', upVote: 0, downVote: 0, img: mem3 },
+        { name: 'Mem4', upVote: 0, downVote: 0, img: mem4 }
       ],
     }
 
@@ -55,13 +55,14 @@ class App extends React.Component {
     return (
 
       <div id="App" stylesheet={style} >
+        <div id="header"><text id="welcome_text">It's Rainy Meme!</text></div>
         <Router>
-          <div id="navbar" stylesheet={style}>
-            <button><NavLink to="/mainlist">MainList</NavLink></button><br/>
-            <button><NavLink to="/hot">Hot</NavLink></button><br/>
-            <button><NavLink to="/cold">{`Cold`}</NavLink></button>
+          <div id="navbar" >
+            <NavLink to="/mainlist"><button class="navbutton">MainList</button></NavLink><br/>
+            <NavLink to="/hot"><button class="navbutton">Hot</button></NavLink><br/>
+            <NavLink to="/cold"><button class="navbutton">{`Cold`}</button></NavLink>
           </div>
-          <div id="content" stylesheet={style}>
+          <div id="content" >
           <Switch>
             <Route path="/mainlist">
               <MainPage memList={this.state.memList} upVote={this.upVote} downVote={this.downVote} />
