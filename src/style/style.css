@@ -1,32 +1,40 @@
+
 body {
-  background-color: dimgray;
+   /* background-image: url("backgfx.jpg"); */
 }
+
 
 text {
   color: azure;
 }
 
-.App {
-  border: 3px solid;
-  border-color: black;
+#App {
   border-radius: 3px;
   max-height: auto;
   max-width: auto;
+  text-align: center;
+  background-color: cornflowerblue;
 }
 
-div {
-  border: 5px;
+.mem {
+  border: 200px;
   border-color: black;
   border-radius: 3px;
   margin: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: blueviolet;
 }
 
-.App {
+
+#navbar {
+  position: fixed;
+  margin-top: 50px;
+  background-color: #333;
   text-align: center;
-  /* display: inline-block; */
+  font-size: large;
+  float: left;
+  overflow: hidden;
+  position: fixed; 
+  top: 0; 
 }
-
-/* .navbar {
-  display: inline-block;
-  border-color: blue;
-} */

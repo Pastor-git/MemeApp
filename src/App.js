@@ -1,4 +1,4 @@
-import './style/style.css';
+import style from './style/style.css';
 import { Switch, Route, BrowserRouter as Router, NavLink } from "react-router-dom";
 import { MainPage } from './components/MainPage';
 import { Hot } from './components/Hot';
@@ -8,7 +8,7 @@ import mem1 from './img/mem1.jpg';
 import mem2 from './img/mem2.jpg';
 import mem3 from './img/mem3.jpg';
 import mem4 from './img/mem4.jpg';
-
+import Background from './img/backgfx.jpg';
 
 class App extends React.Component {
 
@@ -54,13 +54,14 @@ class App extends React.Component {
 
     return (
 
-      <div className="App">
+      <div id="App" stylesheet={style} >
         <Router>
-          <div class="navbar">
-            <li><NavLink to="/mainlist">MainList</NavLink></li>
-            <li><NavLink to="/hot">Hot</NavLink></li>
-            <li><NavLink to="/cold">{`Cold`}</NavLink></li>
+          <div id="navbar" stylesheet={style}>
+            <button><NavLink to="/mainlist">MainList</NavLink></button><br/>
+            <button><NavLink to="/hot">Hot</NavLink></button><br/>
+            <button><NavLink to="/cold">{`Cold`}</NavLink></button>
           </div>
+          <div id="content" stylesheet={style}>
           <Switch>
             <Route path="/mainlist">
               <MainPage memList={this.state.memList} upVote={this.upVote} downVote={this.downVote} />
@@ -72,6 +73,7 @@ class App extends React.Component {
               <Cold memList={this.state.memList} upVote={this.upVote} downVote={this.downVote} />
             </Route>
           </Switch>
+          </div>
         </Router>
       </div>
     );
