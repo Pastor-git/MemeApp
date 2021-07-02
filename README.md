@@ -4,6 +4,8 @@ Prezentuje prostą listę memów z zastosowaniem props, state, route i router
 redux w fazie rozwoju
 stylowanie w css w trakcie rozwoju
 
+grafiki: https://www.pexels.com/pl-pl/szukaj/t%C5%82o%20strony%20internetowej/
+
 Uruchomienie aplikacji: npm start
 
 /////////////////////////////////////

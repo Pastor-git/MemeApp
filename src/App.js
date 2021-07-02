@@ -53,7 +53,7 @@ class App extends React.Component {
   render() {
 
     return (
-
+      
       <div id="App" stylesheet={style} >
        
         <Router>
@@ -62,7 +62,7 @@ class App extends React.Component {
             <NavLink to="/hot"><button class="navbutton" id="hot">Hot</button></NavLink><br/>
             <NavLink to="/cold"><button class="navbutton" id="cold">{`Cold`}</button></NavLink>
           </div>
-          <div id="header"><text id="welcome_text">It's Rainy Meme! Halelujah! Yor rain of memes! JEEE EE EE!</text></div>
+          <div id="header"><text id="welcome_text">It's Rainy Meme! Halelujah! Your rain of memes! JEEE EE EE!</text></div>
           <div id="content" >
           
           <Switch>
@@ -79,6 +79,7 @@ class App extends React.Component {
           </div>
         </Router>
       </div>
+    
     );
   }
 
