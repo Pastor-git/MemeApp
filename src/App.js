@@ -55,7 +55,7 @@ class App extends React.Component {
     return (
 
       <div id="App" stylesheet={style} >
-        <div id="header"><text id="welcome_text">It's Rainy MemeApp! Yor rain of memes!</text></div>
+        <div id="header"><text id="welcome_text">It's Rainy Meme! Halelujah! Yor rain of memes! JEEE EE EE!</text></div>
         <Router>
           <div id="navbar" >
             <NavLink to="/mainlist"><button class="navbutton" id="main">MainList</button></NavLink><br/>
