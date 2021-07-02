@@ -1,6 +1,9 @@
 
 body {
-   /* background-image: url('~~../src/img/cover.jpg'); */
+   background-image: url('~~../src/img/cover.jpg');
+   background-repeat: no-repeat;
+   background-position: fixed;
+   /* background-size: cover; */
    background-color: rgba(3, 10, 22, 0.966);
 }
 
