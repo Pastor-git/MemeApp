@@ -12,15 +12,15 @@ text {
   max-height: auto;
   max-width: auto;
   text-align: center;
-  background-color: rgba(72, 108, 175, 0.651);
+  background-color: rgba(3, 10, 22, 0.966);
   /* background-image: url('./src/img/backgfx.jpg');? */
 }
 
 .mem {
   color: aliceblue;
   border: 200px;
-  border-color: black;
-  border-radius: 3px;
+  border: 1px solid rgb(226, 214, 214);
+  border-radius: 5px;
   margin: 10px;
   width: 600px;
   height: 600px;
@@ -45,19 +45,23 @@ text {
   overflow: hidden;
   position: fixed; 
   top: 0; 
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.418), 0 12px 20px 0 rgba(0,0,0,0.50);
+  box-shadow: 0 1px 4px 0 rgba(252, 252, 252, 0.267), 0 4px 12px 0 rgba(255, 255, 255, 0.192);
 }
 
 #header {
   background-color: rgb(28, 69, 105);
   border: 6px solid rgb(88, 91, 255);
-  width: 1000px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
 #content {
-  background-color: rgba(14, 68, 138, 0.349);
+  /* background-color: rgba(14, 68, 138, 0.349); */
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 6px solid rgb(177, 177, 180);
 }
 
 .navbutton {
