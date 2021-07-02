@@ -8,7 +8,7 @@ import mem1 from './img/mem1.jpg';
 import mem2 from './img/mem2.jpg';
 import mem3 from './img/mem3.jpg';
 import mem4 from './img/mem4.jpg';
-import Background from './img/backgfx.jpg';
+import Background from './img/cover.jpg';
 
 class App extends React.Component {
 

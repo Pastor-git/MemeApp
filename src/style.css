@@ -1,6 +1,7 @@
 
 body {
-   /* background-image: url('~~../src/img/backgfx.jpg'); */
+   /* background-image: url('~~../src/img/cover.jpg'); */
+   background-color: rgba(3, 10, 22, 0.966);
 }
 
 text {
@@ -12,7 +13,6 @@ text {
   max-height: auto;
   max-width: auto;
   text-align: center;
-  background-color: rgba(3, 10, 22, 0.966);
   /* background-image: url('./src/img/backgfx.jpg');? */
 }
 
@@ -45,7 +45,7 @@ text {
   overflow: hidden;
   position: fixed; 
   top: 0; 
-  box-shadow: 0 1px 4px 0 rgba(252, 252, 252, 0.267), 0 4px 12px 0 rgba(255, 255, 255, 0.192);
+  box-shadow: 0 2px 6px 0 rgba(252, 252, 252, 0.267), 0 6px 14px 0 rgba(255, 255, 255, 0.192);
 }
 
 #header {
