@@ -55,14 +55,16 @@ class App extends React.Component {
     return (
 
       <div id="App" stylesheet={style} >
-        <div id="header"><text id="welcome_text">It's Rainy Meme! Halelujah! Yor rain of memes! JEEE EE EE!</text></div>
+       
         <Router>
           <div id="navbar" >
             <NavLink to="/mainlist"><button class="navbutton" id="main">MainList</button></NavLink><br/>
             <NavLink to="/hot"><button class="navbutton" id="hot">Hot</button></NavLink><br/>
             <NavLink to="/cold"><button class="navbutton" id="cold">{`Cold`}</button></NavLink>
           </div>
+          <div id="header"><text id="welcome_text">It's Rainy Meme! Halelujah! Yor rain of memes! JEEE EE EE!</text></div>
           <div id="content" >
+          
           <Switch>
             <Route path="/mainlist">
               <MainPage memList={this.state.memList} upVote={this.upVote} downVote={this.downVote} />
