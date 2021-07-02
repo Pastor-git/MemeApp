@@ -1,10 +1,7 @@
 
 body {
-   background-image: url('~~../src/img/cover.jpg');
-   background-repeat: no-repeat;
-   background-position: fixed;
-   /* background-size: cover; */
-   background-color: rgba(3, 10, 22, 0.966);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+   /* background-color: rgba(3, 10, 22, 0.966); */
 }
 
 text {
@@ -16,7 +13,10 @@ text {
   max-height: auto;
   max-width: auto;
   text-align: center;
-  /* background-image: url('./src/img/backgfx.jpg');? */
+  background-image: url('~~../src/img/cover.jpg');
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
 }
 
 .mem {
@@ -42,21 +42,44 @@ text {
   border-radius: 3px;
   display: block;
   padding: 20px;
-  background-color: #333;
+  background-color: rgba(88, 88, 88, 0.178);
   text-align: center;
   float: left;
   overflow: hidden;
   position: fixed; 
   top: 0; 
-  box-shadow: 0 2px 6px 0 rgba(252, 252, 252, 0.267), 0 6px 14px 0 rgba(255, 255, 255, 0.192);
+  box-shadow: 0 2px 8px 0 rgba(252, 252, 252, 0.267), 0 6px 14px 0 rgba(255, 255, 255, 0.192);
 }
 
 #header {
-  background-color: rgb(28, 69, 105);
-  border: 6px solid rgb(88, 91, 255);
+  /* background-color: rgb(28, 69, 105); */
+  /* border: 6px solid rgb(96, 101, 243); */
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: 1px solid rgb(177, 177, 180);
+  border-radius: 5px;
+  border-image: 
+  linear-gradient(
+     to right, 
+    rgba(0, 0, 0, 0.37), 
+    rgb(0, 0, 0)
+  ) 1 100%;
+  /* border-image: linear-gradient( 
+  [ <right> | to <left> ,]? <black> [, <white>]+ ); */
+
+  box-shadow: 0px 3px rgb(0, 0, 0), -0.8em 0 3em rgb(0, 0, 0);
+  box-shadow: -0.8em 1 3em rgb(247, 245, 245), 0px 3px rgb(0, 0, 0);
+}
+
+#welcome_text {
+  color: antiquewhite;
+  font-size: 48px;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-feature-settings: "aalt";
 }
 
 #content {
@@ -64,7 +87,18 @@ text {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  border: 6px solid rgb(177, 177, 180);
+  border: 1px solid rgb(177, 177, 180);
+  border-radius: 5px;
+  border-image: 
+  linear-gradient(
+     to right, 
+    rgba(0, 0, 0, 0.37), 
+    rgb(0, 0, 0)
+  ) 1 100%;
+  /* border-image: linear-gradient( 
+  [ <right> | to <left> ,]? <black> [, <white>]+ ); */
+  /* box-shadow: 20px 20px 50px 10px pink inset;  */
+  box-shadow:  0px 3px rgb(0, 0, 0), -0.8em 0 3em rgb(0, 0, 0);
 }
 
 .navbutton {
