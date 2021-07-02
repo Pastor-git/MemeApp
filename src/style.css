@@ -22,8 +22,10 @@ text {
   border-color: black;
   border-radius: 3px;
   margin: 10px;
-  margin-left: 200px;
-  margin-right: 200px;
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgba(0, 0, 0, 0.616);
   padding: 5px;
 }
@@ -33,6 +35,7 @@ text {
   width: 150x;
   height: 180px;
   margin-top: 58px;
+  margin-left: 20px;
   border-radius: 3px;
   display: block;
   padding: 20px;
@@ -48,6 +51,9 @@ text {
 #header {
   background-color: rgb(28, 69, 105);
   border: 6px solid rgb(88, 91, 255);
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #content {
