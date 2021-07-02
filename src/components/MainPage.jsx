@@ -4,7 +4,7 @@ import Mem from "./Mem";
 export const MainPage = (props) => {
   // return
   return (
-    <div class="mem">
+    <div>
       {props.memList.map((mem) => {
         return (
           <Mem
