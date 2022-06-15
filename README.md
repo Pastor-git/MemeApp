@@ -1,10 +1,6 @@
 Projek wykonany w ramach studiów podyplomowych Fornt-end Developer z React na Akademi Leona Koźmińskiego w trakcie pandemii w roku akademickim 2020/2021
 Prezentuje prostą listę memów z zastosowaniem props, state, route i router
 
-Pod kierownictwem: 
-Grzegorz Mazur
-Opiekun projektu zaliczeniowego w React: Rober Kuliński
-
 redux w fazie rozwoju
 stylowanie w css w trakcie rozwoju
 
